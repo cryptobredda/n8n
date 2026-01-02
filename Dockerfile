@@ -2,9 +2,8 @@ FROM docker.n8n.io/n8nio/n8n
 
 USER root
 
-RUN npm install -g exceljs@4.3.0
+RUN npm install -g exceljs xlsx
 ENV NODE_FUNCTION_ALLOW_BUILTIN=*
 ENV NODE_FUNCTION_ALLOW_EXTERNAL=*
-ENV N8N_RUNNERS_ALLOW_PROTOTYPE_MUTATION=true
 
 USER node
